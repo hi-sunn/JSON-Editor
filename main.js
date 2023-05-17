@@ -25,7 +25,6 @@ app.get("/retrieve", function (req, res) {
     }
     console.log(`stdout: ${stdout}`);
     console.error(`stderr: ${stderr}`);
-    // alert(`stdout: ${stdout}`);
   });
   res.redirect(`http://127.0.0.1:3000/loading?action=export`);
   res.end();
