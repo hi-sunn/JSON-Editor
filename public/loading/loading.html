@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      .loader {
+        border: 16px solid #f3f3f3;
+        border-radius: 50%;
+        border-top: 16px solid #3498db;
+        width: 120px;
+        height: 120px;
+        -webkit-animation: spin 2s linear infinite; /* Safari */
+        animation: spin 2s linear infinite;
+        margin: auto;
+      }
+
+      /* Safari */
+      @-webkit-keyframes spin {
+        0% {
+          -webkit-transform: rotate(0deg);
+        }
+        100% {
+          -webkit-transform: rotate(360deg);
+        }
+      }
+
+      @keyframes spin {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h2 id="action" style="text-align: center"></h2>
+    <div class="loader"></div>
+  </body>
+</html>
+<script>
+  // redirect to home page
+  function redirectHome(action) {
+    setTimeout(function () {
+      alert("Successfully " + action + " Json !");
+      location.href = "http://127.0.0.1:3000/";
+    }, 15000);
+  }
+  // check type of action export/import
+  function checkAction() {
+    const urlParams = new URLSearchParams(window.location.search);
+    const action = urlParams.get("action");
+    console.log(action + "ed");
+    if (action == "export") {
+      let eksyen = (document.getElementById("action").innerHTML =
+        "Exporting ...");
+      redirectHome(action + "ed");
+    } else if (action == "import") {
+      let eksyen = (document.getElementById("action").innerHTML =
+        "Importing ...");
+      redirectHome(action + "ed");
+    } else {
+      let eksyen = (document.getElementById("action").innerHTML =
+        "Something unexpected had happen redirecting ...");
+      redirectHome(action);
+    }
+  }
+  checkAction();
+</script>

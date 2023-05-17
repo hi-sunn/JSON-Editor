@@ -82,12 +82,20 @@
     </h1>
     <div class="container d-flex">
       <div class="container-sm" style="max-width: 500px">
-         <div class="border mb-3"> 
-          <p class="text-center fs-5" style="text-align: center; font-family: 'Poppins', sans-serif;" >Instructions</p>
-          <ul >
+        <div class="border mb-3">
+          <p
+            class="text-center fs-5"
+            style="text-align: center; font-family: 'Poppins', sans-serif"
+          >
+            Instructions
+          </p>
+          <ul>
             <li>Import Json From MongoDB</li>
             <li>Load Json from local using button below</li>
-            <li>After editing Json, save into /json_folder and replace the same file</li>
+            <li>
+              After editing Json, save into /json_folder and replace the same
+              file
+            </li>
             <li>Import the Json after replacing the file</li>
           </ul>
         </div>
@@ -152,8 +160,6 @@
           </tr>
         </table>
         <!-- <p class="text-danger">Warning: Still in alpha !</p> -->
-
-       
       </div>
       <br />
       <div id="jsoneditor"></div>
@@ -217,6 +223,8 @@
         localStorage.setItem(0, jsonSaved);
         alert("Your Json is saved in browser 👍");
       }
+
+
     </script>
     <!-- <script type="text/javascript">
       window.addEventListener("beforeunload", function (event) {
