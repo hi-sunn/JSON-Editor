@@ -6,5 +6,3 @@
 - To access the app use http://localhost:3000
 
 ![alt text](https://github.com/hi-sunn/JSON-Editor/blob/main/src/docs/demopic.png)
-
-
