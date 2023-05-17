@@ -4,6 +4,7 @@
 - Make sure to edit batch files inside batch folder (export.bat/import.bat) for selecting specific db and collections
 - Json editor is created at https://github.com/josdejong/jsoneditor by @josdejong https://github.com/josdejong
 - To access the app use http://localhost:3000
-![alt text](http://url/to/img.png)
-<!-- C:\xampp\htdocs\JSON-Editor\src\docs\demopic.png -->
+
+![alt text](https://github.com/hi-sunn/JSON-Editor/blob/main/src/docs/demopic.png)
+
 
